@@ -1,0 +1,196 @@
+@font-face {
+    font-family:'Aviny2.ttf';
+    src: url(Aviny2.ttf);
+}
+
+body{
+    font-family: 'Aviny2.ttf';
+    
+        background-image: url('bg.jpg');
+         position: relative;
+        
+         background-size: cover;
+    
+    }
+
+*{
+margin:0;
+padding: 0;
+
+box-sizing: border-box;
+}
+#txt{
+text-transform: uppercase;
+    font-family: 'Aviny2.ttf';
+position: absolute;
+display: inline;
+
+top: 10rem;
+
+color: rgb(241, 236, 236);
+margin-left: 44%;
+
+
+font-size:4rem;
+
+animation-name:Movetoleft ;
+animation-duration: 2s;
+}
+
+span{
+
+
+    font-family: 'Aviny2.ttf';
+position: absolute;
+display: inline;
+
+top: 10rem;
+
+color: rgb(241, 236, 236);
+margin-left: 40%;
+
+animation-name:Movetoleft ;
+animation-duration: 2s;
+font-size:4rem;
+
+
+
+}
+p{
+
+    font-family: 'Aviny2.ttf';
+    position: absolute;
+    display: inline;
+    
+    top: 14rem;
+    
+    color: rgb(241, 236, 236);
+    margin-left: 25%;
+    
+    
+    font-size:4rem;
+    animation-name:Movetoright ;
+animation-duration: 2s;
+    
+
+}
+
+#b1{
+
+
+    animation-name:animateBTN ;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+    background-color: transparent;
+color:#eee;
+    margin-left: 37%;
+cursor: pointer;
+position: absolute;
+
+top: 22rem;
+
+width: 9.5rem;
+
+height: 3rem;
+font-size: 1.1rem;
+border-radius: 50px;
+
+outline: 0;
+border: 2px solid gray;
+letter-spacing: 1px;
+
+}
+
+
+#b2{
+
+    animation-name:animateBTN ;
+    animation-duration: 1s;
+    animation-delay: 2.3s;
+
+    animation-fill-mode: backwards;
+     background-color: #eee;
+     color:444;
+    letter-spacing: 1px;
+    border:0rem;
+    margin-left: 51%;
+    cursor: pointer;
+    position: absolute;
+    
+    top: 22rem;
+    
+    width: 9rem;
+    
+    height: 3rem;
+    border-radius: 50px;;
+    
+font-size: 1.1rem;
+
+outline: 0;
+
+
+}
+
+@keyframes Movetoleft{
+
+0%{
+transform: translateX(120px);
+
+opacity: 0;
+}
+100%{
+
+    transform: translateX(0);
+
+    opacity: 1;
+
+
+}
+
+
+
+}
+
+@keyframes Movetoright{
+
+    0%{
+    transform: translateX(-120px);
+    
+    opacity: 0;
+    }
+    100%{
+    
+        transform: translateX(0);
+    
+        opacity: 1;
+    
+    
+    }
+    
+    
+    
+    }
+
+    @keyframes animateBTN{
+
+0%{
+
+
+opacity: 0;
+
+
+
+
+}
+
+100%{
+opacity: 1;
+
+
+
+}
+
+
+
+    }
